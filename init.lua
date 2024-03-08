@@ -99,7 +99,7 @@ vim.g.maplocalleader = ' '
 vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -769,6 +769,8 @@ require('lazy').setup {
       statusline.section_location = function()
         return ''
       end
+
+      require('mini.pairs').setup()
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
