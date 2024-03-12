@@ -7,12 +7,12 @@
 ========         .----------------------.   | === |          ========
 ========         |.-""""""""""""""""""-.|   |-----|          ========
 ========         ||                    ||   | === |          ========
-========         ||   KICKSTART.NVIM   ||   |-----|          ========
+========         ||   KICKSTART.Nvim   ||   |-----|          ========
 ========         ||                    ||   | === |          ========
 ========         ||                    ||   |-----|          ========
 ========         ||:Tutor              ||   |:::::|          ========
 ========         |'-..................-'|   |____o|          ========
-========         `"")----------------(""`   ___________      ========
+========         `"")---------------(""`   ___________      ========
 ========        /::::::::::|  |::::::::::\  \ no mouse \     ========
 ========       /:::========|  |==hjkl==:::\  \ required \    ========
 ========      '""""""""""""'  '""""""""""""'  '""""""""""'   ========
@@ -258,7 +258,7 @@ require('lazy').setup {
   -- lazy loading plugins that don't need to be loaded immediately at startup.
   --
   -- For example, in the following configuration, we use:
-  --  event = 'VimEnter'
+  --  event = 'vimEnter'
   --
   -- which loads which-key before all the UI elements are loaded. Events can be
   -- normal autocommands events (`:help autocmd-events`).
@@ -561,8 +561,6 @@ require('lazy').setup {
                   '${3rd}/luv/library',
                   unpack(vim.api.nvim_get_runtime_file('', true)),
                 },
-                -- If lua_ls is really slow on your computer, you can try this instead:
-                -- library = { vim.env.VIMRUNTIME },
               },
               completion = {
                 callSnippet = 'Replace',
